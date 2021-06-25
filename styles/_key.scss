@@ -1,0 +1,55 @@
+@import './variables';
+@import './templates';
+
+.key {
+  @extend %buttonize;
+  background-color: $keyColor;
+  width: $keySize;
+  &#Space,
+  &#Backslash {
+    flex-grow: 1;
+  }
+  border-radius: 3px;
+  height: $keySize;
+  display: inline-block;
+  margin: $keyMargin;
+  color: $textColor;
+  flex-grow: 0;
+  padding-left: 4px;
+}
+
+.control-key {
+  @extend .key;
+  &:not(#ArrowUp)
+    :not(#ArrowDown)
+    :not(#ArrowLeft)
+    :not(#ArrowRight)
+    :not(#ControlLeft)
+    :not(#ControlRight)
+    :not(#win)
+    :not(#AltRight)
+    :not(#AltLeft) {
+    width: unset;
+    flex-grow: 1;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  &#Backspace,
+  &#Tab {
+    width: unset;
+    flex-grow: 1;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  &#CapsLock,
+  &#Enter {
+    flex-grow: 0.5 !important;
+  }
+  background-color: $controlKeyColor;
+  font-size: 9px;
+}
+
+#ShiftRight,
+#ShiftLeft {
+  width: (2 * $keySize) !important;
+}

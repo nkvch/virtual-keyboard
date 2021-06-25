@@ -1,0 +1,12 @@
+@import './variables';
+
+.textfield {
+  width: $keyboardWidth;
+  height: $textFieldHeight;
+  border: 0;
+  border-radius: $keyBoardRadius;
+  padding: $textfieldPadding;
+  &:focus {
+    outline: none;
+  }
+}

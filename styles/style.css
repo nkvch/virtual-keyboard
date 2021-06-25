@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap");
+.key, .control-key {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: 4px 4px 0 #3d3d3d;
+          box-shadow: 4px 4px 0 #3d3d3d;
+}
+
+.key:hover, .control-key:hover {
+  background-color: #313131;
+  cursor: pointer;
+}
+
+.pressed.key, .pressed.control-key {
+  background-color: #292929;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(4px, 4px);
+          transform: translate(4px, 4px);
+}
+
+.key, .control-key {
+  background-color: #5c5c5c;
+  width: 50px;
+  border-radius: 3px;
+  height: 50px;
+  display: inline-block;
+  margin: 3px;
+  color: white;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  padding-left: 4px;
+}
+
+.key#Space, #Space.control-key, .key#Backslash, #Backslash.control-key {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.control-key {
+  background-color: #2e2e2e;
+  font-size: 9px;
+}
+
+.control-key:not(#ArrowUp) :not(#ArrowDown) :not(#ArrowLeft) :not(#ArrowRight) :not(#ControlLeft) :not(#ControlRight) :not(#win) :not(#AltRight) :not(#AltLeft) {
+  width: unset;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.control-key#Backspace, .control-key#Tab {
+  width: unset;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.control-key#CapsLock, .control-key#Enter {
+  -webkit-box-flex: 0.5 !important;
+      -ms-flex-positive: 0.5 !important;
+          flex-grow: 0.5 !important;
+}
+
+#ShiftRight,
+#ShiftLeft {
+  width: 100px !important;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  width: 100%;
+}
+
+.keyboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #a3a3a3;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 10px 13px 17px 10px;
+  border-radius: 10px;
+  width: 820px;
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+/Edge */
+  user-select: none;
+  /* Standard */
+}
+
+.textfield {
+  width: 820px;
+  height: 240px;
+  border: 0;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.textfield:focus {
+  outline: none;
+}
+
+.key, .control-key {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: 4px 4px 0 #3d3d3d;
+          box-shadow: 4px 4px 0 #3d3d3d;
+}
+
+.key:hover, .control-key:hover {
+  background-color: #313131;
+  cursor: pointer;
+}
+
+.pressed.key, .pressed.control-key {
+  background-color: #292929;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(4px, 4px);
+          transform: translate(4px, 4px);
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Kirang Haerang', cursive;
+  color: #8b4ebd;
+  white-space: nowrap;
+}
+
+.heading h1 {
+  font-size: 70px;
+  margin: 20px;
+  margin-top: 0;
+}
+
+.heading p {
+  font-size: 20px;
+}
+
+.key, .control-key {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-shadow: 4px 4px 0 #3d3d3d;
+          box-shadow: 4px 4px 0 #3d3d3d;
+}
+
+.key:hover, .control-key:hover {
+  background-color: #313131;
+  cursor: pointer;
+}
+
+.pressed.key, .pressed.control-key {
+  background-color: #292929;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(4px, 4px);
+          transform: translate(4px, 4px);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #abd2ec;
+  overflow: hidden;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

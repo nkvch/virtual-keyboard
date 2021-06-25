@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+@import './variables';
+@import './key';
+@import './keyboard';
+@import './textfield';
+@import './heading';
+@import './templates';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $pageBg;
+  overflow: hidden;
+}
+
+
+.container {
+  @include centralize();
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}

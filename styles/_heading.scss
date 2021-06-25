@@ -1,0 +1,17 @@
+@import './variables';
+@import './templates';
+
+.heading {
+    @include centralize();
+    font-family: 'Kirang Haerang', cursive;
+    color: $headingColor;
+    white-space: nowrap;
+    h1 {
+        font-size: $headingSize;
+        margin: 20px;
+        margin-top: 0;
+    }
+    p {
+        font-size: 20px;
+    }
+}

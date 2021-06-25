@@ -1,0 +1,26 @@
+@import './variables';
+
+@mixin centralize {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin pressed {
+  background-color: $clickKeyColor;
+  box-shadow: none;
+  transform: translate($keyDepth, $keyDepth);
+}
+
+%buttonize {
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: $hoverKeyColor;
+    cursor: pointer;
+  }
+  &.pressed {
+    @include pressed();
+  }
+  box-shadow: $keyDepth $keyDepth 0 $keyShadow;
+}

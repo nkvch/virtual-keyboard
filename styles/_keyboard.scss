@@ -1,0 +1,28 @@
+@import './variables';
+
+.row {
+  display: flex;
+  height: $keySize;
+  margin-top: $keyMargin;
+  margin-bottom: $keyMargin;
+  width: 100%;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $keyboardBg;
+  margin-top: $keyboardTextdieldIndent;
+  margin-bottom: $keyboardTextdieldIndent;
+  padding: 
+    $keyBoardPadding
+    $keyBoardPadding + 3px 
+    $keyBoardPadding + 7px 
+    $keyBoardPadding;
+    border-radius: $keyBoardRadius;
+  width: $keyboardWidth;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
