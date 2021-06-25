@@ -18,3 +18,7 @@ To play around with keyboard just open the `index.html` which is in the root dir
 
 - VanillaJS <3
 - Sass for styling
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
