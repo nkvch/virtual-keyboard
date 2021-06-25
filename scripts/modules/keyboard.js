@@ -108,6 +108,9 @@ class Keyboard {
     window.addEventListener('keydown', (event) => {
       event.preventDefault();
       const key = event.code;
+      if (!this.keys.includes(key)) {
+        return null;
+      }
       this.pressed.push(key);
       if (key !== this.mouseClicked) {
         this[key].press(event);
@@ -117,6 +120,9 @@ class Keyboard {
     window.addEventListener('keyup', (event) => {
       event.preventDefault();
       const key = event.code;
+      if (!this.keys.includes(key)) {
+        return null;
+      }
       this.pressed = this.pressed.filter((el) => el !== key);
       if (key !== this.mouseClicked) {
         this[key].unpress(event);
