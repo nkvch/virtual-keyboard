@@ -19,7 +19,6 @@
   -webkit-transform: translate(4px, 4px);
           transform: translate(4px, 4px);
 }
-
 .key, .control-key {
   background-color: #5c5c5c;
   width: 50px;
@@ -73,7 +72,6 @@
 #ShiftLeft {
   width: 100px !important;
 }
-
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -105,7 +103,6 @@
   user-select: none;
   /* Standard */
 }
-
 .textfield {
   width: 820px;
   height: 240px;
@@ -117,7 +114,6 @@
 .textfield:focus {
   outline: none;
 }
-
 .key, .control-key {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -137,8 +133,7 @@
   -webkit-transform: translate(4px, 4px);
           transform: translate(4px, 4px);
 }
-
-.heading {
+.text-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,16 +152,15 @@
   white-space: nowrap;
 }
 
-.heading h1 {
+.text-container h1 {
   font-size: 70px;
   margin: 20px;
   margin-top: 0;
 }
 
-.heading p {
+.text-container p {
   font-size: 20px;
 }
-
 .key, .control-key {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -186,7 +180,6 @@
   -webkit-transform: translate(4px, 4px);
           transform: translate(4px, 4px);
 }
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -197,7 +190,7 @@ body {
   overflow: hidden;
 }
 
-.container {
+.app-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

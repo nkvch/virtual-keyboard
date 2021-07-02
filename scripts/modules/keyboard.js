@@ -84,7 +84,7 @@ class Keyboard {
     this.mouseClicked = null;
     this.generate = this.generate.bind(this);
     this.rows.forEach((row) => this.element.appendChild(row));
-    document.getElementById('container').appendChild(this.element);
+    document.getElementById('appContainer').appendChild(this.element);
     this.textfield = document.getElementById('textfield');
     this.textfield.addEventListener('focusout', (e) => {
       e.preventDefault();
@@ -106,14 +106,16 @@ class Keyboard {
       localStorage.setItem('language', this.language);
     }
     window.addEventListener('keydown', (event) => {
-      event.preventDefault();
       const key = event.code;
-      if (!this.keys.includes(key)) {
-        return null;
-      }
-      this.pressed.push(key);
-      if (key !== this.mouseClicked) {
-        this[key].press(event);
+      if (this.keys.includes(key)) {
+        event.preventDefault();
+        if (!this.keys.includes(key)) {
+          return null;
+        }
+        this.pressed.push(key);
+        if (key !== this.mouseClicked) {
+          this[key].press(event);
+        }
       }
     });
 

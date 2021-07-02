@@ -1,7 +1,7 @@
 @import './variables';
 @import './templates';
 
-.heading {
+.text-container {
     @include centralize();
     font-family: 'Kirang Haerang', cursive;
     color: $headingColor;
@@ -15,3 +15,5 @@
         font-size: 20px;
     }
 }
+
+/*# sourceMappingURL=style.css.map */

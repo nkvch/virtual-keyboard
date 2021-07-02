@@ -4,7 +4,7 @@
 @import './key';
 @import './keyboard';
 @import './textfield';
-@import './heading';
+@import './text_container';
 @import './templates';
 
 * {
@@ -17,8 +17,10 @@ body {
 }
 
 
-.container {
+.app-container {
   @include centralize();
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
 }
+
+/*# sourceMappingURL=style.css.map */
