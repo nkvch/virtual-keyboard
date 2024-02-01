@@ -1,19 +1,29 @@
 import { Keyboard } from './modules/keyboard.js';
 
-var container = document.createElement('div');
-container.className = 'container';
-container.id = 'container';
-const heading = document.createElement('div');
-heading.className = 'heading';
-heading.innerHTML = 
-`<h1>ViRtual KeyBoard</h1>
-<p>Keyboard is made using Linux(Ubuntu) system. To switch between languages: Ctrl + Alt</p>`;
-container.appendChild(heading);
+var appContainer = document.createElement('div');
+appContainer.className = 'app-container';
+appContainer.id = 'appContainer';
+const textContainer = document.createElement('div');
+textContainer.className = 'text-container';
+
+const heading = document.createElement('h1');
+const headingText = document.createTextNode('ViRtual KeyBoard');
+heading.appendChild(headingText);
+
+const switchLangInfo = document.createElement('p');
+const switchLangInfoText = document.createTextNode('Keyboard is made using Linux(Ubuntu) system. To switch between languages: Ctrl + Alt');
+switchLangInfo.appendChild(switchLangInfoText);
+
+textContainer.appendChild(heading);
+textContainer.appendChild(switchLangInfo);
+
+
+appContainer.appendChild(textContainer);
 let textfield = document.createElement('textarea');
 textfield.id = 'textfield';
 textfield.className = 'textfield';
-container.appendChild(textfield);
-document.body.appendChild(container);
+appContainer.appendChild(textfield);
+document.body.appendChild(appContainer);
 
 let board = new Keyboard();
 

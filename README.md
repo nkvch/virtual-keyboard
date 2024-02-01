@@ -10,9 +10,9 @@ To play around with keyboard just open the `index.html` which is in the root dir
 
 `https://github.com/nkvch/virtual-keyboard`
 
-#### To switch to source branch
+#### Install dependencies
 
-`git checkout source`
+`npm install`
 
 ### Keyboard is made using:
 

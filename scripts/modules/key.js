@@ -5,11 +5,9 @@ class KeyPrototype {
     this.element = document.createElement('div');
     this.element.className = 'key';
     this.element.id = name;
-    this.render = this.render.bind(this);
     this.render();
     document.getElementById(`row${row}`).appendChild(this.element);
     this.textfield = document.getElementById('textfield');
-
     this.press = this.press.bind(this);
     this.unpress = this.unpress.bind(this);
   }
