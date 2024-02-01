@@ -132,9 +132,10 @@ class Keyboard {
     });
 
     this.element.addEventListener('mousedown', (event) => {
-      //console.log(event);
+      console.log(event);
       event.preventDefault();
-      const key = event.path.find((el) =>
+      const path = event.composedPath();
+      const key = path.find((el) =>
         /(^key$|control-key)/.test(el.className)
       )?.id;
       if (key) {
